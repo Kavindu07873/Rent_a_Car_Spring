@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>User Board</title>
     <meta content="width=device-width initial-scale=1" name="viewport">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/styles.css" rel="stylesheet">
     <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
           integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" rel="stylesheet">
     <style>
@@ -24,13 +24,14 @@
         }
         main>aside{
             /*display: inline-block;*/
-            position: relative;
-            left: 10%;
+            position: absolute;
+            display: inline-block;
+            left: 2%;
             bottom: 0;
             right: 0;
-            top: 60%;
-            width: 15%;
-            height: 11%;
+            top: 58%;
+            width: 96%;
+            height: 36%;
         }
     </style>
 </head>
@@ -91,21 +92,16 @@
 
 <main class="container-fluid" id="customerContent">
     <div >
-<!--    <img src="assets/img/5-50298_hd-wallpaper-download-bmw-cars-wallpaper-hd-for.jpg">-->
+    <img src="assets/img/5-50298_hd-wallpaper-download-bmw-cars-wallpaper-hd-for.jpg">
 <!--    <img src="assets/img/5-50298_hd-wallpaper-download-bmw-cars-wallpaper-hd-for.jpg" class="img-fluid" alt="...">-->
 <!--    <img src="assets/img/5-50298_hd-wallpaper-download-bmw-cars-wallpaper-hd-for.jpg" class="img-fluid" alt="Responsive image">-->
 </div>
 
     <aside style="position: absolute">
-        <button type="button" class="btn btn-dark btn-primary btn-lg">Admin Login </button>
+        <button type="button" class="btn btn-dark btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Admin Login </button>
        <br>
         <br>
         <button type="button" class="btn btn-dark btn-primary btn-lg">User  Login</button>
-<!--        <button>Admin</button>-->
-<!--        <button>User</button>-->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Launch demo modal
-        </button>
     </aside>
 
     <section>
@@ -134,6 +130,6 @@
 
 
 </main>
-<script src="assets/js/bootstrap.js"></script>
+<script src="../assets/js/bootstrap.js"></script>
 </body>
 </html>
